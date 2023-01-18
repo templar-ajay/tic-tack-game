@@ -6,7 +6,6 @@
 }
 
 :root{
-
     --main-background:black;
     --second-color:white;
     --font-1:'Poppins', sans-serif;
@@ -18,20 +17,14 @@
 
 body{
     background-color: var(--main-background);
-
 }
 .first-main{
     height: 100vh;
     width: 100vw;
-    
-    
 }
 
 .second-main{
-background-color: aquamarine;
     margin: auto;
-    align-items: center;
-    justify-content: center;
     max-width: 45vw;
     max-height:60vh ;
     overflow: hidden;
@@ -47,8 +40,6 @@ background-color: aquamarine;
     font-size: 5.5em;
     color: var(--second-color);
     font-family: var(--font-1);
-  
-
 }
 .br{
     border-right: solid var(--second-color) 2.5px;
