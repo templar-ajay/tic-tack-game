@@ -19,6 +19,8 @@ function run(){
             e.target.removeEventListener('click',insert);
             checkId.push({text:e.target.textContent,id:e.target.id});
             console.log(checkId);// logging checkID 
+            const aud= new Audio('./sounds/Player1.aiff') 
+            aud.play()
             match();
 
             ////////////////////////////////////////////////////////////////////////
@@ -26,6 +28,8 @@ function run(){
             checkId.push({text:'X',id:`${rndm}`});
             const id= document.getElementById(`${rndm}`);
             id.innerHTML='X';
+            // const aud2=new Audio('./sounds/player2.aiff')
+            // aud2.play()
             // id.replaceWith(id.cloneNode(true));
 
             ////////////////////////////////////////////////////////////////////////
@@ -36,6 +40,11 @@ function run(){
                 Draw +=1
                 draw.textContent=`Draw : ${Draw}`
                 overlay.classList.remove('hidden')
+                 setTimeout(() => {
+                    const aud2=new Audio('./sounds/player2.aiff')
+                      aud2.play()
+                      overlay.classList.remove('hidden')
+                }, 500); 
                 new_game.addEventListener('click',(e)=>{
                     newGame()
                 })
@@ -63,8 +72,14 @@ function match(){
                 // gridAll.forEach(val=>{
                 //     val.replaceWith(val.cloneNode(true))
                 // })
+
+                setTimeout(() => {
+                    const aud2=new Audio('./sounds/player2.aiff')
+                      aud2.play()
+                      overlay.classList.remove('hidden')
+                }, 500); 
                 ////////////////////////////////////////////////////////////////////////
-                overlay.classList.remove('hidden')
+                
                 new_game.addEventListener('click',(e)=>{
                     newGame()
                 })
@@ -90,9 +105,7 @@ function newGame(){
 
     checkId.forEach(function elem(element){
         const ele = document.getElementById(element.id);
-              ele.innerHTML=''
-
-
+              ele.innerHTML='';
     });
     overlay.classList.add('hidden');
     checkId=[];
