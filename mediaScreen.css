@@ -1,0 +1,17 @@
+:root{
+
+}
+@media screen and (max-width:400px) {
+
+    .second-main{
+
+        max-width:100vh;
+    }
+    .grid{
+        width: 30vw;
+    }
+    .score{
+        font-size: 1.5em;
+        max-width: 100vh !important;
+    }
+}
