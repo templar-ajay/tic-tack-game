@@ -18,7 +18,7 @@ function run(){
             e.target.textContent='O';
             e.target.removeEventListener('click',insert);
             checkId.push({text:e.target.textContent,id:e.target.id});
-            console.log(checkId);// logging checkID 
+            // console.log(checkId);// logging checkID 
             const aud= new Audio('./sounds/Player1.aiff') 
             aud.play()
             match();
@@ -63,8 +63,8 @@ function match(){
         const id3=document.getElementById(val.id3);
             if(id1.textContent == '' && id2.textContent == '' && id3.textContent  == '')return
             if(id1.textContent === id2.textContent && id1.textContent === id3.textContent  &&  id2.textContent === id3.textContent){
-                console.log('you win ')
-                console.log(id2.textContent)
+                // console.log('you win ')
+                // console.log(id2.textContent)
 
                 ////////////////////////////////////////////////////////////////////////
                 id1.textContent ==='O' ? yourScore +=1 : pcScore +=1;
