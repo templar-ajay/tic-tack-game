@@ -19,7 +19,7 @@ function run(){
             e.target.removeEventListener('click',insert);
             checkId.push({text:e.target.textContent,id:e.target.id});
             // console.log(checkId);// logging checkID 
-            const aud= new Audio('./sounds/Player1.aiff') 
+            const aud= new Audio('./sounds/Player1.mp3') 
             aud.play()
             match();
 
@@ -41,7 +41,7 @@ function run(){
                 draw.textContent=`Draw : ${Draw}`
                 overlay.classList.remove('hidden')
                  setTimeout(() => {
-                    const aud2=new Audio('./sounds/player2.aiff')
+                    const aud2=new Audio('./sounds/player2.mp3')
                       aud2.play()
                       overlay.classList.remove('hidden')
                 }, 500); 
@@ -74,7 +74,7 @@ function match(){
                 // })
 
                 setTimeout(() => {
-                    const aud2=new Audio('./sounds/player2.aiff')
+                    const aud2=new Audio('./sounds/player2.mp3')
                       aud2.play()
                       overlay.classList.remove('hidden')
                 }, 500); 
