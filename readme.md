@@ -1,1 +1,1 @@
-# [click me](https://templar-command0.github.io/tic-tack-game/)
+# [click me](https://templar-ajay.github.io/tic-tack-game/)
